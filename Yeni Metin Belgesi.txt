@@ -1,0 +1,191 @@
+~PRİMİTİVE
+> Sonradan değiştirilemez
+> string number boolean null symbol 
+> basit veriler tutar
+
+~NON-PRİMİTİVE
+> [] değer tutar değiştirilebilir
+> nums[0] = 1
+> boolean değerler atama
+> objeler array
+
+~MATH
+> math.raund() = yakın sayıya yuvarlar
+> math.ceil() = üst sayıya yuvarlar
+> math.floor() = alt sayıya yuvarlar
+> math.min/max = değerler arasındaki min / max değerleri alır
+> math.random = 0-1 arasında rastgele sayı üretir X11 yaparsan 0-10 arasında random sayı üretir
+> math.abs = mutlak değer
+> math.sqrt = karekök
+> math.pow = üstlü sayı
+
+ ~LENGHT
+> uzunluk
+> -1 son harfi verir
+
+~STRİNG  ~CONCATİNATİON
+> bir js değişkeni tanımlarken sayı $_ hariç özel karakter ile başlanamaz
+> let ile atanan değer sonradan değiştirilebilir const ile atanırsa değiştirilemez
+> let name = 'huzey'
+> let surname = 'cin'
+> let fullName = name + surname
+> console.log(fullName) = huzeycin
+> number ile yazılıysa toplar string varsa toplamaz
+> stringler arası boşluk atmak için '' kullanılabilir
+> ``, "",'' ile kullanılabilir
+> number string ile yazılabilir
+> let str = new string ile kullanılırsa typı string olan yapı oluşturur
+> substr = belirtilen alanı almamızı sağlar
+> split = bölerek stringi yazıya döndürür
+
+/n alt satıra geçer
+/t tab boşluğu tılmasını sağlar
+/' yukarıdan tırnak atar
+// backslash
+
+~Falsy Values
+> 0, on, null, undefined, nan, the boolean false, '', "", ``
+
+~Operator
+> == veri tipine bakmaz yani 5 = '5' eşittir
+> === veri tipine bakar yani 5 = '5' eşit değildir
+> != eşit değilse
+
+
+~Logical Operators
+> && folse arar ( ve, varsa )
+> || true arar  ( veya, yoksa )
+> !() = değilse
+> let count = 0
+> console.log(count--/++) = 0
+> console.log(count) = -1/+1
+> console.log(++/--count) = 1/-1
+
+~Ternary Operators -koşul
+> ? true ise yazdır
+> : folse ise yazdır
+
+ ~SLİCE METHODS
+> belirtilen alanı almaz dilimler - sondan alır
+
+ ~SUBSTRİNG METHOD
+> başlangıç değerini büyük girsekte otomatik düzeltir
+
+ ~SEARCH Method
+> dizi içinde arama yapar "i" ile casesensitive açılır /DATA/Gİ şeklinde kullanılabilir g global arama yapar
+> includes = dizi içerisinde arama yapar
+
+ ~REPLACE METHOD
+> 2 değer yazılır , sonra ilk değerin yerine getirilecek olan değer yazılır ilk değere değeri yazılır
+> g yazılırsa global olarak arar bütün değerleri değiştirir /value/g şeklinde yazılır
+
+ ~TRİM METHOD
+> dizi içi boşluk ayarını yapar
+> trimend, trimstart değerleri vardır
+
+ ~STARTWİTH / STARTENDS METHOD 
+> şunlamı başlıyor vb
+
+~Window Methods
+> alert
+> prompt('enter number', 'number goes here' ) ilk değer inputun üstünde ikinci değer inputun içinde varsayılan bir değer olarak gelir sayı almak için başına + konulur
+> confirm cevaba tamama tıklanırsa true iptala basılırsa folse
+
+~Date Object
+> get ile başlar 
+
+~If (ise) = bir ifadenin true olup olmadığına göre block codu yürütür
+~If Else = true ise belirtilen yazı çıksın folse belirttiğimiz yazı çıksın yazdırabiliriz 
+~If Else IF Else = birden fazla koşul için kullanılır
+========== let number = 5 ==========
+	   let (number === 4) {
+	      //
+	      } else if (number >= 5) {
+	      //
+1 koşul	      } else if (number > 5) {
+doğrulanırsa  //
+yazar 	      } else {
+	      // 		> BREAK = DÖNGÜYÜ KIRAR <
+	      } 
+~Switch
+> if else if else alternatifidir 
+ switch(caseValue){
+case 1:
+   // code  > ilk koşul gerçekleşirse
+  break       ondan sonrakiler görmezden
+case 2:               gelir 
+   // code
+  break
+case 3:
+   // code
+  default: ======= hiç bir koşul gerçekleşmezse
+   // code              bu değer gerçekleşir
+
+ ~For Döngüsü
+> sınırlı tekrarlarda kullanılır
+> for(let i=1;i<100;i++){ ilk virgüle kadar başlangıç değeri 2. döngünün koşul tarafı son kısım artırma azalma emri
+> of ile kullanıldığında indexi vermez
+}
+
+ ~Countinue 
+> belirtilen alanı almaz
+
+ ~While döngüsü 
+> -e kadar -e'nin üstündeyse gibi durumlarda kullanılır
+>  while(koşul){// döngü içi}
+                           
+~Do While 
+> en az bir kere çalıştırmak için
+     
+> /t = bir tab boşluk atar                 
+> array ile farklı veri türleri tutulabilir [] = ile gösterilir  [] içerisinde array kullanıldıysa seçmek için iki [] gerekli                       
+===============================
+  let array1 = [1, 2, 3]
+  let array2 = [4, 5, 6]
+  let result = array1.concat(array2, array1) //concat birleştirir    =   [1, 2, 3, 4, 5, 6]
+
+> indexof = dizi içerisinide eleman arar   varsa kacıncı kelimede olduğunu yazar yoksa -1 soldan sağa arar
+> lastindexof  =========== büyük küçük harfe duyarlıdır sağdan sola arar 
+> includes = indexof dan tek farkı sonucunda boolean değer döndürür
+> tostring = diziyi stringe çevirir   
+> slace = string vb değerler içinden değer seçmek için kullanılır
+> join = dizi birleştirme
+> split = parçalayıp diziye çevirir
+> push = dizinin sonuna eleman ekler
+> pop = sondaki elemanı kaldırır depolar
+> shift = baştaki elemanı çıkarır depolar
+> unshift = dizinin başına eleman ekler
+> reverse = dizi içindeki elemanları tersine çevirir
+> sorting = a-z artan sıralar 
+> break = kırılma noktası aranan bulunduysa döngü kırılsın diye tanımlanabilir
+> contuine = aranan değer bulunduğunda yazdırmak istenmiyorsa kullanılır
+> aritmetik işlemler yapılacaksa integer yada floata çevrilmesi gerekir number() str() vb
+> isArray = array olup olmadığını söyler
+ ~FUNCTİONS
+> yeniden kullanilabilen kod bloğu SYNTAX =  FUNCTİON + NAME + PARANTEZ
+> functions içine yazılan name çağrılmazsa çalışmaz
+> geriye birşeyler döndürür parametre alır 50 yerde tanımlarınsa tek bir function değeri değiştirmek yeterli
+> içerisine dışarıdan ulaşılamaz
+> arguments = döküm şeklinde gösterir
+> return = yazdırır
+> join() = parantez içine ne yazılırsa öyle birleştirir
+> splice = dizi içinde kesme yapar ikinci değer yeni değer atr
+
+ ~FUNCTİONS DECLARATİON
+> 
+==========================================
+CTRL + SHIFT+ K	Seçilen mevcut satırı siler
+CTRL + L	Mevcut satırı seçer
+
+==========================================
+> iki tür veri saklama = primitive non-primitive primitive ilkel non-primitive karmaşık
+
+ ~ARROW FUNCTİON
+>
+
+function selamVer() {
+        let sayHello=prompt("sayHello")
+        console.log(sayHello)
+}
+selamVer()
+
